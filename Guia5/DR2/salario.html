@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ingreso de Notas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-
+scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <link rel="stylesheet" href="css/salario.css" />
+    <link rel="stylesheet" href="css/formoid-solid-purple.css" />
+    <script src="js/disabledtextfields.js"></script>
+    <script src="js/inputFilter.js"></script>
+    <!-- <script src="js/formoid-solid-purple.js"></script> -->
+    <script src="js/modernizr.custom.lis.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+<header id="inset">
+    <h1>Promedio de Notas</h1>
+</header>
+<section>
+<article>
+<div id="Alumno">
+<form action="salario.php" method="POST" name="salario" id="salario" 
+class="formoid-solid-purple">
+<div class="title">
+    <h2>Ingreso de Notas</h2>
+
+</div>
+<!--  -->
+<div class="element-name">
+    <label class="title"></label>
+    <div class="nameFirst">
+        <input type="text" name="Alumno" id="txtAlumno" maxlength="50" 
+placeholder="Nombre Estudiante" 
+allowed="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚáéíóúÜü" messageid="alfabeticchars" class="large" />
+        <span class="icon-place"></span>
+    </div>
+    <span id="alfabeticchars">Solo acepta caracteres alfabéticos</span>
+</div>
+<input type="reset" name="agregar" id="agregar" value="Agregar" class="btn btn-primary" />
+<select name="Nombre" class="nameFirst" id="Nombre" size="6" multiple="multiple"></select>
+<!--  -->
+<div class="element-number">
+    <label class="title"></label>
+    <div class="item-cont">
+        <input type="text" name="nota1" id="nota1" maxlength="10" 
+placeholder="Primer Nota" allowed="0123456789." messageid="numbersonly" 
+class="large" />
+        <span class="icon-place"></span>
+    </div>
+    <span id="numbersonly">Solo acepta números y punto decimal</span>
+</div>
+<!--  -->
+<div class="element-number">
+    <label class="title"></label>
+    <div class="item-cont">
+        <input type="text" name="nota2" id="nota2" maxlength="10" 
+placeholder="Segunda Nota" allowed="0123456789." messageid="numbersonly" 
+class="large" />
+        <span class="icon-place"></span>
+    </div>
+    <span id="numbersonly">Solo acepta números y punto decimal</span>
+</div>
+<!--  -->
+<div class="element-number">
+    <label class="title"></label>
+    <div class="item-cont">
+        <input type="text" name="nota3" id="nota3" maxlength="10" 
+placeholder="tercer Nota" allowed="0123456789." messageid="numbersonly" 
+class="large" />
+        <span class="icon-place"></span>
+    </div>
+    <span id="numbersonly">Solo acepta números y punto decimal</span>
+</div>
+<!--  -->
+<div class="submit">
+    <input type="submit" name="enviar" id="enviar" value="Enviar" />
+    <input type="reset" name="reset" id="reset" value="Restablecer" />
+</div>
+</form>
+</div>
+</article>
+</section>
+</body>
+</html>

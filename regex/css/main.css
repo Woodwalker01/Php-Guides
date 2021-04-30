@@ -1,0 +1,42 @@
+.nav-wrapper{
+    background-color: cornflowerblue;
+    padding-left: 20px;
+}
+
+.master{
+    text-align: center;
+}
+.waves-effect{
+    width: 100%;
+    background-color: cornflowerblue;
+}
+/* Celular */
+@media (min-width: 576px) {  
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  
+    .lo{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .lo{
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 50px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .lo{
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 50px;
+    }
+}
